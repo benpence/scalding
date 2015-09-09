@@ -446,7 +446,7 @@ object ScaldingBuild extends Build {
         import com.twitter.scalding.ReplImplicitContext._
         """,
       libraryDependencies <++= (scalaVersion) { scalaVersion => Seq(
-        "jline" % "jline" % scalaVersion.take(4),
+        "jline" % "jline" % "2.12",
         "org.scala-lang" % "scala-compiler" % scalaVersion,
         "org.scala-lang" % "scala-reflect" % scalaVersion,
         "org.apache.hadoop" % "hadoop-client" % hadoopVersion % "provided",
